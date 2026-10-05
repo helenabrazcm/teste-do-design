@@ -1,0 +1,159 @@
+# ============================================================================
+# SEGURANÇA - NÃO VERSIONE INFORMAÇÕES SENSÍVEIS
+# ============================================================================
+
+# Variáveis de ambiente (contém chaves secretas)
+.env
+.env.local
+.env.prod
+.env.*.local
+
+# Banco de dados SQLite (contém dados sensíveis e de usuários)
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Arquivos de configuração sensível
+.venv_secret
+secret_key.txt
+config_prod.py
+
+# ============================================================================
+# PYTHON - Arquivos compilados e cache
+# ============================================================================
+
+# Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cache do Python
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testes e cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ============================================================================
+# VIRTUAL ENVIRONMENTS
+# ============================================================================
+
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ============================================================================
+# IDE E EDITOR
+# ============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Atom
+.atom/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================================================
+# SO - Arquivos do sistema operacional
+# ============================================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+.directory
+
+# ============================================================================
+# LOGS E TEMPORÁRIOS
+# ============================================================================
+
+*.log
+logs/
+*.tmp
+tmp/
+temp/
+
+# ============================================================================
+# DESENVOLVIMENTO LOCAL
+# ============================================================================
+
+# Notebooks locais
+*.ipynb_checkpoints/
+
+# Qualquer arquivo local de teste
+test_local*
+debug_*
+
+# ============================================================================
+# SEGURANÇA - NÃO VERSIONE BACKUPS DO BANCO
+# ============================================================================
+
+*.db.backup
+*.db.bak
+backup/
+backups/
+*_backup.*
+
+# ============================================================================
+# FERRAMENTAS - Arquivos gerados
+# ============================================================================
+
+.DS_Store
+.env
+.pytest_cache
+.mypy_cache
