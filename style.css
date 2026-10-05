@@ -915,7 +915,7 @@ main { max-width: 1080px; margin: 28px auto 80px; padding: 0 clamp(14px, 4vw, 24
         right: auto;
         top: auto;
     }
-    /* Carrinho fixo no canto inferior direito no celular */
+    
 .cart-corner {
     position: fixed;
     bottom: calc(20px + env(safe-area-inset-bottom));
@@ -965,7 +965,7 @@ main { max-width: 1080px; margin: 28px auto 80px; padding: 0 clamp(14px, 4vw, 24
     .overlay { align-items: center; }
 }
 
-/* ---------- Produto configurável (milk-shake etc.) ---------- */
+
 .config-overlay { z-index: 240; }
 .cfg-section { margin-top: 16px; }
 .cfg-label {
@@ -1002,16 +1002,16 @@ main { max-width: 1080px; margin: 28px auto 80px; padding: 0 clamp(14px, 4vw, 24
 
 @media (min-width: 721px) {
     header.top {
-        min-height: 300px !important;
-        height: 280px !important;
-        background-image: url('img/cliente\ pc.jpg');
-        background-size: contain !important;
+        min-height: 302px !important;
+        height: 302px !important;
+        background-image: url('img/cliente\ pc.jpg') !important;
+        background-size: cover !important;
         background-position: center center !important;
         background-repeat: no-repeat !important;
-        background-color: #0a1a4a;
+        background-color: transparent;
         padding: 0 !important;
+        border-bottom: none;
     }
-
     #loginScreen header.top .title-block,
     #loginScreen header.top .eyebrow,
     #loginScreen header.top h1,
